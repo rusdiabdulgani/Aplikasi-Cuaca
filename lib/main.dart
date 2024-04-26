@@ -4,11 +4,11 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:aplikasi_cuaca/api/weather_service.dart'; // Import package permission_handler
 
 void main() {
-  runApp(const MainApp());
+  runApp(const MyApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
