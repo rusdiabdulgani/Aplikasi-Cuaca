@@ -93,7 +93,7 @@ class WeatherScreen extends StatelessWidget {
                       Icon(
                         iconData,
                         size: 50,
-                        color: Color.fromARGB(255, 46, 235, 8), // You can change the color as needed
+                        color: Color.fromARGB(255, 99, 235, 8), // You can change the color as needed
                       ),
                     ],
                   ),
@@ -122,10 +122,10 @@ class WeatherScreen extends StatelessWidget {
             position.latitude, position.longitude); // Fetch weather data by coordinates
         return {'cityName': weatherData['name'], 'temperature': weatherData['main']['temp'], 'weather': weatherData['weather'][0]['main']};
       } else {
-        throw Exception('Location service is disabled');
+        throw Exception('Layanan lokasi dinonaktifkan');
       }
     } catch (e) {
-      print('Error getting location: $e');
+      print('Kesalahan mendapatkan lokasi: $e');
       return {'cityName': 'Unknown', 'temperature': 'Unknown', 'weather': 'Unknown'};
     }
   }

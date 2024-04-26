@@ -13,7 +13,7 @@ class WeatherService {
     if (response.statusCode == 200) {
       return json.decode(response.body);
     } else {
-      throw Exception('Failed to fetch weather data');
+      throw Exception('Gagal mengambil data cuaca');
     }
   }
 }
